@@ -16,6 +16,7 @@ public class ManageShortcutTest extends BaseTest {
 		settingsPage.manageShortcut.click();
 		
 		Shortcuts shortcuts = new Shortcuts(driver);
+		shortcuts.openShortcuts();
 		Assert.assertTrue(shortcuts.selectShortcutByVisibleText(pageName) != null);
 	}
 }

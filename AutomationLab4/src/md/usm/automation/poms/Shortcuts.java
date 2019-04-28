@@ -16,7 +16,7 @@ public class Shortcuts extends AbstractPOM {
 	@FindBy(xpath = "//a[@id='toolbar-item-shortcuts']")
 	public WebLink shortcutsBtn;
 
-	@FindBy(xpath = "//nav[@aria-label = 'User-defined shortcuts']//ul[@class = 'toolbar-menu']/li")
+	@FindBy(xpath = "//nav[@aria-label = 'User-defined shortcuts']//ul[@class = 'toolbar-menu']/li/a")
 	public List<WebLink> shortcutLinks;
 	
 	@FindBy(xpath = "//a[@class='edit-shortcuts']")

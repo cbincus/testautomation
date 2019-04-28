@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
+@SuppressWarnings("unused")
 public class WebRadio extends WebTypifiedElement {
 	public WebRadio(WebElement wrappedElement) {
 		super(wrappedElement);
@@ -24,7 +25,8 @@ public class WebRadio extends WebTypifiedElement {
      *
      * @return Label text or {@code null} if no label has been found.
      */
-    private String getLabelText() {
+    
+	private String getLabelText() {
         WebElement label = getLabel();
         return label == null ? null : label.getText();
     }
