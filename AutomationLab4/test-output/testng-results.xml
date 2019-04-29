@@ -2,39 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12505" started-at="2019-04-26T19:39:59Z" finished-at="2019-04-26T19:40:12Z">
+  <suite name="Default suite" duration-ms="16761" started-at="2019-04-29T16:46:13Z" finished-at="2019-04-29T16:46:30Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:md.usm.automation.cucumber.DeleteArticleCucumber@150c158]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="12505" started-at="2019-04-26T19:39:59Z" finished-at="2019-04-26T19:40:12Z">
-      <class name="md.usm.automation.cucumber.DeleteArticleCucumber">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:md.usm.automation.cucumber.DeleteArticleCucumber@150c158]" name="setUpClass" is-config="true" duration-ms="133" started-at="2019-04-26T19:39:59Z" finished-at="2019-04-26T19:39:59Z">
+    <test name="Default test" duration-ms="16761" started-at="2019-04-29T16:46:13Z" finished-at="2019-04-29T16:46:30Z">
+      <class name="md.usm.automation.tests.CreateArticleURLAlias">
+        <test-method status="PASS" signature="loginWithDefaultUser()[pri:0, instance:md.usm.automation.tests.CreateArticleURLAlias@1224144a]" name="loginWithDefaultUser" is-config="true" duration-ms="5424" started-at="2019-04-29T16:46:13Z" finished-at="2019-04-29T16:46:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:md.usm.automation.cucumber.DeleteArticleCucumber@150c158]" name="runScenario" duration-ms="12327" started-at="2019-04-26T19:39:59Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-26T19:40:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete Article"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Delete Article"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- loginWithDefaultUser -->
+        <test-method status="PASS" signature="createArticleURLAlias()[pri:0, instance:md.usm.automation.tests.CreateArticleURLAlias@1224144a]" name="createArticleURLAlias" duration-ms="10558" started-at="2019-04-29T16:46:19Z" finished-at="2019-04-29T16:46:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:md.usm.automation.cucumber.DeleteArticleCucumber@150c158]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2019-04-26T19:40:12Z" finished-at="2019-04-26T19:40:12Z">
+        </test-method> <!-- createArticleURLAlias -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:md.usm.automation.tests.CreateArticleURLAlias@1224144a]" name="quit" is-config="true" duration-ms="757" started-at="2019-04-29T16:46:29Z" finished-at="2019-04-29T16:46:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- md.usm.automation.cucumber.DeleteArticleCucumber -->
+        </test-method> <!-- quit -->
+      </class> <!-- md.usm.automation.tests.CreateArticleURLAlias -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

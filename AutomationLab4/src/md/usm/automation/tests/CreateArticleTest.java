@@ -10,7 +10,7 @@ public class CreateArticleTest extends BaseTest {
 	public void test() {
 		driver.get("http://dev-allied-automation-drupal.pantheonsite.io/node/add/article");
 		CreateArticle createArticle = new CreateArticle(driver);
-		createArticle.titleElement.clearAndFill("My test title");
+		createArticle.titleInput.clearAndFill("My test title");
 		
 		if (createArticle.commentSettingsDiv.getAttribute("open") == null)
 			createArticle.commentSettingsDiv.click();

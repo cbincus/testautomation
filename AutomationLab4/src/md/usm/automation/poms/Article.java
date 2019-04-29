@@ -15,7 +15,7 @@ public class Article extends AbstractPOM {
 	@FindBy(xpath = "//div[contains(@class, 'region-content')]//h1[contains(@class, 'page-title')]")
 	public WebText title;
 	
-	@FindBy(xpath = "//div[contains(@class, 'node__content')]")
+	@FindBy(xpath = "//div[contains(@class, 'field--type-text-with-summary')]")
 	public WebText content;
 	
 	@FindBy(xpath = "//div[contains(@class, 'node__meta')]")

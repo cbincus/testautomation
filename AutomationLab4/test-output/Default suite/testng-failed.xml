@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="md.usm.automation.cucumber.DeleteArticleCucumber">
+      <class name="md.usm.automation.tests.CreateArticleURLAlias">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="loginWithDefaultUser"/>
+          <include name="quit"/>
+          <include name="createArticleURLAlias"/>
         </methods>
-      </class> <!-- md.usm.automation.cucumber.DeleteArticleCucumber -->
+      </class> <!-- md.usm.automation.tests.CreateArticleURLAlias -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
