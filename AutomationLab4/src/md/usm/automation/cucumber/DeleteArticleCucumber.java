@@ -48,7 +48,7 @@ public class DeleteArticleCucumber extends AbstractTestNGCucumberTests {
 	@When("^the \"Delete\" button is clicked")
 	public void delete() {
 		Article article = new Article(driver);
-		article.delete.click();
+		article.deleteLnk.click();
 	}
 	
 	@And("^the deletion is confirmed$")

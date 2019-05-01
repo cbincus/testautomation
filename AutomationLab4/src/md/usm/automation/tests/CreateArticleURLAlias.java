@@ -26,9 +26,9 @@ public class CreateArticleURLAlias extends BaseTest {
 		createArticle.saveBtn.click();
 		
 		Article article = new Article(driver);
-		System.out.println(article.title.getText());
-		System.out.println(article.content.getText());
-		Assert.assertTrue(title.equalsIgnoreCase(article.title.getText()));
-		Assert.assertTrue(content.equalsIgnoreCase(article.content.getText()));
+		System.out.println(article.titleTxt.getText());
+		System.out.println(article.contentTxt.getText());
+		Assert.assertTrue(title.equalsIgnoreCase(article.titleTxt.getText()));
+		Assert.assertTrue(content.equalsIgnoreCase(article.contentTxt.getText()));
 	}
 }

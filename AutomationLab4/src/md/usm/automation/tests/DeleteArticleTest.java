@@ -13,7 +13,7 @@ public class DeleteArticleTest extends BaseTest {
 	public void test() {
 		driver.get("http://dev-allied-automation-drupal.pantheonsite.io/node/9");
 		Article article = new Article(driver);
-		article.delete.click();
+		article.deleteLnk.click();
 		
 		DeleteArticle deleteArticle = new DeleteArticle(driver);
 		Helpers.waitForVisibleElement(driver, deleteArticle.confirmDeleteHeader, 10);

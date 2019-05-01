@@ -13,7 +13,7 @@ public class CloseArticleComments extends BaseTest {
 	public void test() {
 		driver.get("http://dev-allied-automation-drupal.pantheonsite.io/node/4/edit");
 		Article article = new Article(driver);
-		article.edit.click();
+		article.editLnk.click();
 		
 		CreateArticle createArticle = new CreateArticle(driver);
 		if (createArticle.commentSettingsDiv.getAttribute("open") == null)

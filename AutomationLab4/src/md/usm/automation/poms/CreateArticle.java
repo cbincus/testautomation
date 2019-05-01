@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 import md.usm.automation.core.AbstractPOM;
+import md.usm.automation.webelements.WebCheckbox;
 import md.usm.automation.webelements.WebLink;
 import md.usm.automation.webelements.WebRadio;
 import md.usm.automation.webelements.WebTextInput;
@@ -55,4 +56,18 @@ public class CreateArticle extends AbstractPOM {
 	
 	@FindBy(xpath = "//input[@id = 'edit-path-0-alias']")
 	public WebTextInput urlAliasInput;
+	
+	@FindBy(xpath = "//summary[contains(text(),'Promotion options')]")
+	public WebLink promotionMenu;
+	
+	public void expandPromotionMenu() {
+		if (promotionMenu.getAttribute("aria-expanded").equalsIgnoreCase("false"))
+			promotionMenu.click();
+	}
+	
+	@FindBy(xpath = "//input[@id='edit-promote-value']")
+	public WebCheckbox frontPageCheckbox;
+	
+	@FindBy(xpath = "//input[@id='edit-sticky-value']")
+	public WebCheckbox stickyOptionCheckbox;
 }
