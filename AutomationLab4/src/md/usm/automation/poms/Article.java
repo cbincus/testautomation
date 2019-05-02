@@ -36,8 +36,6 @@ public class Article extends AbstractPOM {
 	@FindBy(xpath = "//form[@id='comment-form']")
 	public WebTypifiedElement commentForm;
 	
-	public WebTextInput commentTitleInput = commentForm
+	public WebTextInput commentTitleInput = (WebTextInput) commentForm
 			.findElement(By.xpath("//input[@id='edit-subject-0-value']"));
-	
-	public WebTextInput commentInput = 
 }

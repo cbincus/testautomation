@@ -1,0 +1,7 @@
+url=http://dev-allied-automation-drupal.pantheonsite.io/node/add/article
+titleInput=//input[@id='edit-title-0-value']
+contentInputFrame=//iframe[@class='cke_wysiwyg_frame cke_reset']
+contentInput=//body
+createArticleButton=//input[@id = 'edit-submit']
+articleTitle=//div[contains(@class, 'region-content')]//h1[contains(@class, 'page-title')]
+articleContent=//div[contains(@class, 'field--type-text-with-summary')]

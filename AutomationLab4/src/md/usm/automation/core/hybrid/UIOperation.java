@@ -3,10 +3,14 @@ package md.usm.automation.core.hybrid;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import md.usm.automation.core.common.BaseTest;
 import md.usm.automation.poms.SelectByVisibleText;
 import md.usm.automation.webelements.WebLink;
 import md.usm.automation.webelements.WebRadio;
@@ -15,18 +19,19 @@ import md.usm.automation.webelements.WebTypifiedElement;
 
 public class UIOperation {
 	WebDriver driver;
+	int waitMilliseconds = BaseTest.EXPLICIT_WAIT;
 	
 	public UIOperation(WebDriver driver){
 		this.driver = driver;
 	}
 	
 	public void perform(Properties p, String operation, 
-			String objectName, String objectType, String objectLocator, String value) throws Exception{
+			String objectType, String objectName, String objectLocatorType, String value) throws Exception{
 
 		WebTypifiedElement webTypifiedElement = null;
 		if (!objectName.isBlank())
 			webTypifiedElement = this.getWebTypifiedElement(
-					driver.findElement(this.getObject(p, objectName, objectType)), objectType);
+					driver.findElement(this.getObjectLocator(p, objectName, objectLocatorType)), objectType);
 		
 		switch (operation.toUpperCase()) {
 		case "CLICK":
@@ -36,6 +41,7 @@ public class UIOperation {
 			
 		case "SETTEXT":
 			// Set text on control
+			webTypifiedElement.clear();
 			webTypifiedElement.sendKeys(value);
 			break;
 			
@@ -64,6 +70,28 @@ public class UIOperation {
 					webTypifiedElement.getText()));
 			break;
 			
+		case "CONTEXTSWITCH":
+			driver.switchTo().frame(webTypifiedElement);
+			break;
+		
+		case "DEFAULTCONTEXT":
+			driver.switchTo().defaultContent();
+			break;
+			
+		case "SETEXPICITWAIT":
+			waitMilliseconds = Integer.parseInt(value);
+			break;
+			
+		case "WAITTOAPPEAR":
+			new WebDriverWait(driver, waitMilliseconds)
+					.until(ExpectedConditions.visibilityOf(webTypifiedElement));
+			break;
+			
+		case "WAITTOLOAD":
+			new WebDriverWait(driver, waitMilliseconds).until(
+			          driver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete"));
+			break;
+			
 		default:
 			break;
 		}
@@ -90,44 +118,30 @@ public class UIOperation {
 	 * @return
 	 * @throws Exception
 	 */
-	private By getObject(Properties p, String objectName, String objectType) throws Exception{
-		// Find by xpath
-		if(objectType.equalsIgnoreCase("XPATH")){
-			
-			return By.xpath(p.getProperty(objectName));
-		}
-		// Find by class
-		else if(objectType.equalsIgnoreCase("CLASSNAME")){
-			
-			return By.className(p.getProperty(objectName));
-			
-		}
-		// Find by name
-		else if(objectType.equalsIgnoreCase("NAME")){
-			
-			return By.name(p.getProperty(objectName));
-			
-		}
-		// Find by CSS
-		else if(objectType.equalsIgnoreCase("CSS")){
-			
-			return By.cssSelector(p.getProperty(objectName));
-			
-		}
-		// Find by link
-		else if(objectType.equalsIgnoreCase("LINK")){
-			
-			return By.linkText(p.getProperty(objectName));
-			
-		}
-		// Find by partial link
-		else if(objectType.equalsIgnoreCase("PARTIALLINK")){
-			
-			return By.partialLinkText(p.getProperty(objectName));
-			
-		} else
-		{
-			throw new IllegalArgumentException("Wrong object type!");
+	private By getObjectLocator(Properties p, 
+			String objectName, String objectLocatorType) 
+					throws Exception {
+		String objectLocatorString = p.getProperty(objectName);
+		
+		switch (objectLocatorType.toUpperCase()) {
+		case "XPATH":
+			return By.xpath(objectLocatorString);
+		case "ID":
+			return By.id(objectLocatorString);
+		case "CLASSNAME":
+			return By.className(objectLocatorString);
+		case "NAME":
+			return By.name(objectLocatorString);
+		case "TAGNAME":
+			return By.tagName(objectLocatorString);
+		case "CSS":
+			return By.cssSelector(objectLocatorString);
+		case "LINK":
+			return By.linkText(objectLocatorString);
+		case "PARTIALLINK":
+			return By.partialLinkText(objectLocatorString);
+		default:
+			throw new IllegalArgumentException("Wrong object type!");	
 		}
 	}
 }

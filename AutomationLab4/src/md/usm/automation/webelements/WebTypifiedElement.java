@@ -18,7 +18,7 @@ public class WebTypifiedElement extends TypifiedElement {
 	protected Logger log = LogManager.getLogger(this.getClass().getSimpleName());
 	
 	public void clearAndFill(String data) {
-		log.info("Filling " + this.getName() + " with " + data);
+		log.info("Filling '" + this.getName() + "' with '" + data);
 		this.clear();
 		this.sendKeys(data);
 	}

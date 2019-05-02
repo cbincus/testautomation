@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="md.usm.automation.tests.MakeArticleStickyTest">
+      <class name="md.usm.automation.tests.hybrid.CreateArticleTestHybrid">
         <methods>
-          <include name="loginWithDefaultUser"/>
-          <include name="makeArticleSticky"/>
+          <include name="testLogin" invocation-numbers="8"/>
           <include name="quit"/>
+          <include name="loginWithDefaultUser"/>
         </methods>
-      </class> <!-- md.usm.automation.tests.MakeArticleStickyTest -->
+      </class> <!-- md.usm.automation.tests.hybrid.CreateArticleTestHybrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

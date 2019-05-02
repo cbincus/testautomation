@@ -14,6 +14,8 @@ public class BaseTest {
 	private static final String LOGIN_PAGE = "http://dev-allied-automation-drupal.pantheonsite.io/user/login";
 	private static final int IMPLICITLY_WAIT = 5; // seconds
 	private static final int PAGE_LOAD_TIMEOUT = 30;
+	
+	public static final int EXPLICIT_WAIT = 10;
 
 	protected WebDriver driver;
 
@@ -40,7 +42,6 @@ public class BaseTest {
 			try {
 				FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}*/

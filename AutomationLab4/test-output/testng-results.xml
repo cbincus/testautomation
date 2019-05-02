@@ -1,25 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-01T17:45:57Z" name="Default suite" finished-at="2019-05-01T17:46:15Z" duration-ms="18151">
+  <suite started-at="2019-05-02T19:30:58Z" name="Default suite" finished-at="2019-05-02T19:31:15Z" duration-ms="17519">
     <groups>
     </groups>
-    <test started-at="2019-05-01T17:45:57Z" name="Default test" finished-at="2019-05-01T17:46:15Z" duration-ms="18151">
-      <class name="md.usm.automation.tests.MakeArticleStickyTest">
-        <test-method is-config="true" signature="loginWithDefaultUser()[pri:0, instance:md.usm.automation.tests.MakeArticleStickyTest@72c927f1]" started-at="2019-05-01T17:45:57Z" name="loginWithDefaultUser" finished-at="2019-05-01T17:46:06Z" duration-ms="8639" status="PASS">
+    <test started-at="2019-05-02T19:30:58Z" name="Default test" finished-at="2019-05-02T19:31:15Z" duration-ms="17519">
+      <class name="md.usm.automation.tests.hybrid.CreateArticleTestHybrid">
+        <test-method is-config="true" signature="loginWithDefaultUser()[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:30:58Z" name="loginWithDefaultUser" finished-at="2019-05-02T19:31:03Z" duration-ms="5228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithDefaultUser -->
-        <test-method signature="makeArticleSticky()[pri:0, instance:md.usm.automation.tests.MakeArticleStickyTest@72c927f1]" started-at="2019-05-01T17:46:06Z" name="makeArticleSticky" finished-at="2019-05-01T17:46:15Z" duration-ms="8810" status="PASS">
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:04Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:07Z" duration-ms="2544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GOTOURL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[url]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- makeArticleSticky -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:md.usm.automation.tests.MakeArticleStickyTest@72c927f1]" started-at="2019-05-01T17:46:15Z" name="quit" finished-at="2019-05-01T17:46:15Z" duration-ms="670" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:07Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:07Z" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SETTEXT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[textinput]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[titleInput]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[my test article]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:07Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:07Z" duration-ms="281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CONTEXTSWITCH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[contentInputFrame]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:07Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:08Z" duration-ms="726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SETTEXT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[textinput]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[contentInput]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[content to check]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:08Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:08Z" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DEFAULTCONTEXT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:08Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:14Z" duration-ms="6708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[button]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[createArticleButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:14Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:14Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SETEXPLICITWAIT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:14Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:14Z" duration-ms="38" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WAITTOLOAD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:14Z" name="testLogin" data-provider="hybridData" finished-at="2019-05-02T19:31:15Z" duration-ms="115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHECKTEXT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[text]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[articleTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[my test article]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:md.usm.automation.tests.hybrid.CreateArticleTestHybrid@544630b7]" started-at="2019-05-02T19:31:15Z" name="quit" finished-at="2019-05-02T19:31:15Z" duration-ms="710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- md.usm.automation.tests.MakeArticleStickyTest -->
+      </class> <!-- md.usm.automation.tests.hybrid.CreateArticleTestHybrid -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
