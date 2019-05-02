@@ -1,4 +1,4 @@
-package md.usm.automation.core;
+package md.usm.automation.core.common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

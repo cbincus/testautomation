@@ -4,9 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import md.usm.automation.core.AbstractPOM;
+import md.usm.automation.core.common.AbstractPOM;
 import md.usm.automation.webelements.WebLink;
 import md.usm.automation.webelements.WebText;
+import md.usm.automation.webelements.WebTextInput;
 import md.usm.automation.webelements.WebTypifiedElement;
 
 public class Article extends AbstractPOM {
@@ -31,4 +32,12 @@ public class Article extends AbstractPOM {
 	
 	public WebLink editLnk = (WebLink) articleTabs.findElement(By.xpath(
 			"//a[contains(text(), 'Edit')]"));
+	
+	@FindBy(xpath = "//form[@id='comment-form']")
+	public WebTypifiedElement commentForm;
+	
+	public WebTextInput commentTitleInput = commentForm
+			.findElement(By.xpath("//input[@id='edit-subject-0-value']"));
+	
+	public WebTextInput commentInput = 
 }

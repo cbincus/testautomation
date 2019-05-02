@@ -1,9 +1,9 @@
-package md.usm.automation.tests;
+package md.usm.automation.tests.basic;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import md.usm.automation.core.BaseTest;
+import md.usm.automation.core.common.BaseTest;
 import md.usm.automation.poms.SettingsPage;
 import md.usm.automation.poms.Shortcuts;
 

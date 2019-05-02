@@ -1,11 +1,11 @@
-package md.usm.automation.tests;
+package md.usm.automation.tests.basic;
 
 import java.util.List;
 
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
-import md.usm.automation.core.BaseTest;
+import md.usm.automation.core.common.BaseTest;
 import md.usm.automation.poms.CreateArticle;
 import md.usm.automation.poms.MainPage;
 import md.usm.automation.webelements.WebTypifiedElement;

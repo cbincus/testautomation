@@ -6,8 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
+import md.usm.automation.poms.SelectByVisibleText;
+
 @SuppressWarnings("unused")
-public class WebRadio extends WebTypifiedElement {
+public class WebRadio extends WebTypifiedElement implements SelectByVisibleText {
 	public WebRadio(WebElement wrappedElement) {
 		super(wrappedElement);
 	}

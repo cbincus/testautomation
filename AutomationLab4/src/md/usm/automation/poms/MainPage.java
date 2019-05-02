@@ -8,8 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import md.usm.automation.core.AbstractPOM;
-import md.usm.automation.core.Helpers;
+import md.usm.automation.core.common.AbstractPOM;
+import md.usm.automation.core.common.Helpers;
 import md.usm.automation.webelements.WebTypifiedElement;
 
 public class MainPage extends AbstractPOM {

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
+import md.usm.automation.core.common.AbstractPOM;
 import md.usm.automation.webelements.WebTextInput;
 import md.usm.automation.webelements.WebTypifiedElement;
 

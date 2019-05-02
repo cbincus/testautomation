@@ -5,7 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import md.usm.automation.core.AbstractPOM;
+import md.usm.automation.core.common.AbstractPOM;
 import md.usm.automation.webelements.WebLink;
 
 public class Shortcuts extends AbstractPOM {

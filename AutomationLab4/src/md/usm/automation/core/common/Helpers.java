@@ -1,4 +1,4 @@
-package md.usm.automation.core;
+package md.usm.automation.core.common;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -12,7 +12,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
-import md.usm.automation.core.Helpers;
+import md.usm.automation.core.common.Helpers;
 import md.usm.automation.poms.Article;
 import md.usm.automation.poms.DeleteArticle;
 import md.usm.automation.poms.Login;
