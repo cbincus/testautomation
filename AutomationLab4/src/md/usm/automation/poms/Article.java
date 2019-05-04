@@ -27,15 +27,15 @@ public class Article extends AbstractPOM {
 	@FindBy(xpath = "//nav[@class = 'tabs' and @role = 'navigation']")
 	public WebTypifiedElement articleTabs;
 	
-	public WebLink deleteLnk = (WebLink) articleTabs.findElement(By.xpath(
-			"//a[contains(text(), 'Delete')]"));
+	public WebLink deleteLnk = new WebLink(articleTabs.findElement(By.xpath(
+			"//a[contains(text(), 'Delete')]")));
 	
-	public WebLink editLnk = (WebLink) articleTabs.findElement(By.xpath(
-			"//a[contains(text(), 'Edit')]"));
+	public WebLink editLnk = new WebLink(articleTabs.findElement(By.xpath(
+			"//a[contains(text(), 'Edit')]")));
 	
 	@FindBy(xpath = "//form[@id='comment-form']")
 	public WebTypifiedElement commentForm;
 	
-	public WebTextInput commentTitleInput = (WebTextInput) commentForm
-			.findElement(By.xpath("//input[@id='edit-subject-0-value']"));
+	public WebTextInput commentTitleInput = new WebTextInput(commentForm
+			.findElement(By.xpath("//input[@id='edit-subject-0-value']")));
 }
