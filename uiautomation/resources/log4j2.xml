@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="ConsoleAppender" target="SYSTEM_OUT">
+			<PatternLayout>
+				<Pattern>
+					%d [%t] %-5level %logger{36} - %msg%n%throwable
+				</Pattern>
+			</PatternLayout>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="TRACE">
+			<AppenderRef ref="ConsoleAppender" />
+		</Root>
+	</Loggers>
+</Configuration>
