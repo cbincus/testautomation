@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ParkingCalculatorTest" data-provider-thread-count="3">
+	<test name="ParkingCalculatorTest">
+		<classes>
+			<class name="test.intro.ParkingCalculatorTest"></class>
+		</classes>
+	</test>
+</suite>

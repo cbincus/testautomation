@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="3" name="Failed suite [ParkingCalculatorTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ParkingCalculatorTest(failed)">
+    <classes>
+      <class name="test.intro.ParkingCalculatorTest">
+        <methods>
+          <include name="test" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- test.intro.ParkingCalculatorTest -->
+    </classes>
+  </test> <!-- ParkingCalculatorTest(failed) -->
+</suite> <!-- Failed suite [ParkingCalculatorTest] -->

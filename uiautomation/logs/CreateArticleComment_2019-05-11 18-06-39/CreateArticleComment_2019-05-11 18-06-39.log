@@ -1,0 +1,16 @@
+2019-05-11 18:06:39,935 INFO CreateArticleComment [main] 'CreateArticleComment' test started
+2019-05-11 18:06:43,649 INFO WebTextInput [main] Fill 'Username Input' with 'allied2019'
+2019-05-11 18:06:43,783 INFO WebTextInput [main] Fill 'Password Input' with 'LbQ8al0&HVnH2vLrnn'
+2019-05-11 18:06:43,930 INFO WebTypifiedElement [main] Click on element 'Submit Btn'
+2019-05-11 18:06:51,086 INFO WebTextInput [main] Fill 'null' with 'test comment title'
+2019-05-11 18:06:51,217 INFO WebTextInput [main] Filling 'Comment Input' with 'test comment body
+2019-05-11 18:06:52,294 INFO WebLink [main] Click on element 'null'
+2019-05-11 18:06:58,582 INFO Helpers [main] Check 2 string if equals:
+1st: 'Sat, 05/11/2019 - 15:06'
+2nd: 'Sat, 05/11/2019 - 15:06'
+2019-05-11 18:06:58,621 INFO Helpers [main] Check 2 string if equals:
+1st: 'test comment title'
+2nd: 'test comment title'
+2019-05-11 18:06:58,662 INFO Helpers [main] Check 2 string if equals:
+1st: 'test comment body'
+2nd: 'test comment body'
