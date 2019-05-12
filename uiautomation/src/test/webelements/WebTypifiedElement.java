@@ -7,10 +7,6 @@ import org.openqa.selenium.WebElement;
 import ru.yandex.qatools.htmlelements.element.TypifiedElement;
 
 public class WebTypifiedElement extends TypifiedElement {
-	  static { System.setProperty("log4j.configurationFile",
-			  "resources/log4j2.xml"); }
-	 
-	
 	public WebTypifiedElement(WebElement wrappedElement) {
 		super(wrappedElement);
 	}

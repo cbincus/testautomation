@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.cucumber.runners.DeleteArticleRunner">
+      <class name="test.intro.ParkingCalculatorTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="test" invocation-numbers="0 2 1"/>
         </methods>
-      </class> <!-- test.cucumber.runners.DeleteArticleRunner -->
+      </class> <!-- test.intro.ParkingCalculatorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

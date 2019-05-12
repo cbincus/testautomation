@@ -1,7 +1,10 @@
 package test.poms;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import test.core.common.AbstractPOM;
@@ -38,4 +41,14 @@ public class Article extends AbstractPOM {
 	
 	public WebTextInput commentTitleInput = new WebTextInput(commentForm
 			.findElement(By.xpath("//input[@id='edit-subject-0-value']")));
+	
+	@FindBy(xpath = "//body")
+	public WebTextInput commentInput;
+	
+	public WebLink commentSendBtn = new WebLink(commentForm
+			.findElement(By.xpath("//input[@id='edit-submit']")));
+	
+	public List<WebElement> getComments() {
+		return driver.findElements(By.xpath("//article[@typeof = 'schema:Comment']"));
+	}
 }
