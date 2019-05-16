@@ -1,0 +1,4 @@
+2019-05-16 21:40:09,134 INFO DeleteCommentTest [main] 'DeleteCommentTest' test started
+2019-05-16 21:40:16,100 INFO WebTextInput [main] Fill 'Username Input' with 'allied2019'
+2019-05-16 21:40:19,367 INFO WebTextInput [main] Fill 'Password Input' with 'LbQ8al0&HVnH2vLrnn'
+2019-05-16 21:40:19,495 INFO WebButton [main] Click on element 'Submit Btn'

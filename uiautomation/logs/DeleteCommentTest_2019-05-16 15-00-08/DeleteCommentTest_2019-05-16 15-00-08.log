@@ -1,0 +1,5 @@
+2019-05-16 15:00:08,376 INFO DeleteCommentTest [main] 'DeleteCommentTest' test started
+2019-05-16 15:00:13,213 INFO WebTextInput [main] Fill 'Username Input' with 'allied2019'
+2019-05-16 15:00:13,328 INFO WebTextInput [main] Fill 'Password Input' with 'LbQ8al0&HVnH2vLrnn'
+2019-05-16 15:00:13,458 INFO WebButton [main] Click on element 'Submit Btn'
+2019-05-16 15:00:20,347 INFO DeleteCommentTest [main] Screenshot name is 'logs/DeleteCommentTest_2019-05-16 15-00-08/DeleteCommentTest_2019-05-16 15-00-20.png'
