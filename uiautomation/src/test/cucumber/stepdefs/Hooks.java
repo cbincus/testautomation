@@ -2,11 +2,7 @@ package test.cucumber.stepdefs;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.logging.log4j.LogManager;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import test.core.cucumber.World;

@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -37,11 +38,18 @@ public abstract class BaseTest {
 	
 	private String testName;
 	private LocalDateTime testStartTimestamp; 
+	protected String username;
+	protected ZoneId zoneid;
 	
 	@BeforeClass
 	public void initTest() throws IOException {
+		try (InputStream is = new FileInputStream(CONFIG_PATH)) {
+			config.load(is);
+		}
+		
 		testName = this.getClass().getSimpleName();
 		testStartTimestamp = LocalDateTime.now();
+		zoneid = ZoneId.of(config.getProperty("timezone"));
 		String testStartTimeString = Helpers.getDateTimeText(testStartTimestamp);
 		
 		String logPath = LOG_PATH_ROOT + testName + "_" + testStartTimeString + "/" ;
@@ -53,10 +61,6 @@ public abstract class BaseTest {
 		
 		System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
 		
-		try (InputStream is = new FileInputStream(CONFIG_PATH)) {
-			config.load(is);
-		}
-		
 		log = LogManager.getLogger(testName);
 		log.info("'" + testName + "' test started");
 	}
@@ -65,6 +69,7 @@ public abstract class BaseTest {
 	public void prepareTest() {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);	
+		driver.manage().window().maximize();
 	}
 	
 	public void login(String username, String password) {
@@ -76,6 +81,8 @@ public abstract class BaseTest {
 		loginPage.passwordInput.sendKeys(password);
 		loginPage.submitBtn.click();
 		Helpers.waitForPageLoad(driver, EXPLICIT_WAIT);
+		
+		this.username = username;
 	}
 
 	public void loginWithDefaultUser() {

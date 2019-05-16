@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.intro.ParkingCalculatorTest">
+      <class name="test.tests.basic.DeleteCommentTest">
         <methods>
-          <include name="test" invocation-numbers="0 2 1"/>
+          <include name="prepareTest"/>
+          <include name="afterMethod"/>
+          <include name="deleteCommentTest"/>
+          <include name="initTest"/>
         </methods>
-      </class> <!-- test.intro.ParkingCalculatorTest -->
+      </class> <!-- test.tests.basic.DeleteCommentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

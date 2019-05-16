@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 import test.core.common.BaseTest;
 import test.core.common.Helpers;
 import test.poms.Article;
-import test.poms.CreateArticle;
+import test.poms.ArticleSettings;
 
 public class CreateArticleURLAlias extends BaseTest {
 	@Test
 	public void createArticleURLAlias() {
 		driver.get("http://dev-allied-automation-drupal.pantheonsite.io/node/2/edit");
-		CreateArticle createArticle = new CreateArticle(driver);
+		ArticleSettings createArticle = new ArticleSettings(driver);
 		// createArticle.urlAliasMenu.click();
 		Helpers.sleep(1000);
 		createArticle.urlAliasInput.sendKeys("/testarticle");

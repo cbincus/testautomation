@@ -1,0 +1,16 @@
+2019-05-15 16:55:18,625 INFO CreateArticleTest [main] 'CreateArticleTest' test started
+2019-05-15 16:55:26,346 INFO WebTextInput [main] Fill 'Username Input' with 'allied2019'
+2019-05-15 16:55:26,507 INFO WebTextInput [main] Fill 'Password Input' with 'LbQ8al0&HVnH2vLrnn'
+2019-05-15 16:55:26,670 INFO WebButton [main] Click on element 'Submit Btn'
+2019-05-15 16:55:30,074 INFO WebTextInput [main] Fill 'Title Input' with 'My test title'
+2019-05-15 16:55:30,807 INFO WebTypifiedElement [main] Click on element 'Save Btn'
+2019-05-15 16:55:34,200 INFO Helpers [main] Check 2 string if equals:
+1st: 'My test title'
+2nd: 'My test title'
+2019-05-15 16:55:34,430 INFO Helpers [main] Check 2 string if equals:
+1st: 'My test content'
+2nd: 'My test content'
+2019-05-15 16:55:34,543 INFO Helpers [main] Check 2 string if equals:
+1st: 'Submitted by allied2019 on Wed, 05/15/2019 - 13:55'
+2nd: 'Submitted by allied2019 on Wed, 05/15/2019 - 13:55'
+2019-05-15 16:55:43,381 INFO CreateArticleTest [main] Screenshot name is 'logs/CreateArticleTest_2019-05-15 16-55-18/CreateArticleTest_2019-05-15 16-55-43.png'

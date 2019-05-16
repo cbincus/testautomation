@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import test.core.common.BaseTest;
 import test.poms.Article;
-import test.poms.CreateArticle;
+import test.poms.ArticleSettings;
 
 public class CloseArticleComments extends BaseTest {
 	@Test
@@ -15,7 +15,7 @@ public class CloseArticleComments extends BaseTest {
 		Article article = new Article(driver);
 		article.editLnk.click();
 		
-		CreateArticle createArticle = new CreateArticle(driver);
+		ArticleSettings createArticle = new ArticleSettings(driver);
 		if (createArticle.commentSettingsDiv.getAttribute("open") == null)
 			createArticle.commentSettingsDiv.click();
 		

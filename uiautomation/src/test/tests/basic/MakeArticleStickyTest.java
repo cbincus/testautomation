@@ -1,20 +1,18 @@
 package test.tests.basic;
 
-import java.util.List;
-
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import test.core.common.BaseTest;
-import test.poms.CreateArticle;
+import test.poms.ArticleSettings;
 import test.poms.MainPage;
-import test.webelements.WebTypifiedElement;
 
 public class MakeArticleStickyTest extends BaseTest {
 	@Test
 	public void makeArticleSticky() {
 		driver.get("http://dev-allied-automation-drupal.pantheonsite.io/node/2/edit");
-		CreateArticle createArticle = new CreateArticle(driver);
+		ArticleSettings createArticle = new ArticleSettings(driver);
 		createArticle.expandPromotionMenu();
 		createArticle.stickyOptionCheckbox.click();
 		
@@ -22,8 +20,7 @@ public class MakeArticleStickyTest extends BaseTest {
 		
 		driver.get("http://dev-allied-automation-drupal.pantheonsite.io/");
 		MainPage mainPage = new MainPage(driver);
-		List<WebTypifiedElement> articleList = mainPage.getArticleList();
-		WebTypifiedElement firstArticle = articleList.get(0);
+		WebElement firstArticle = mainPage.articleList.get(0);
 		Assert.assertTrue(firstArticle.getAttribute("class").contains("node--sticky"));
 	}
 }

@@ -1,0 +1,5 @@
+2019-05-15 16:03:08,380 INFO ArticleTest [main] 'ArticleTest' test started
+2019-05-15 16:03:13,258 INFO WebTextInput [main] Fill 'Username Input' with 'allied2019'
+2019-05-15 16:03:13,403 INFO WebTextInput [main] Fill 'Password Input' with 'LbQ8al0&HVnH2vLrnn'
+2019-05-15 16:03:13,584 INFO WebButton [main] Click on element 'Submit Btn'
+2019-05-15 16:03:23,835 INFO ArticleTest [main] Screenshot name is 'logs/ArticleTest_2019-05-15 16-03-07/ArticleTest_2019-05-15 16-03-23.png'

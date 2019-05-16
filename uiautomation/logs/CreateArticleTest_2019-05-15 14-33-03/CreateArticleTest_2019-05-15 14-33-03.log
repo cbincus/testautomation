@@ -1,0 +1,6 @@
+2019-05-15 14:33:03,535 INFO CreateArticleTest [main] 'CreateArticleTest' test started
+2019-05-15 14:33:08,263 INFO WebTextInput [main] Fill 'Username Input' with 'allied2019'
+2019-05-15 14:33:08,373 INFO WebTextInput [main] Fill 'Password Input' with 'LbQ8al0&HVnH2vLrnn'
+2019-05-15 14:33:08,512 INFO WebTypifiedElement [main] Click on element 'Submit Btn'
+2019-05-15 14:33:13,485 INFO WebTextInput [main] Fill 'Title Input' with 'My test title'
+2019-05-15 14:33:14,126 INFO CreateArticleTest [main] Screenshot name is 'logs/CreateArticleTest_2019-05-15 14-33-03/CreateArticleTest_2019-05-15 14-33-14.png'

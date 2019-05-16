@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 import test.core.common.AbstractPOM;
+import test.webelements.WebButton;
 import test.webelements.WebTextInput;
-import test.webelements.WebTypifiedElement;
 
 public class Login extends AbstractPOM {
 
@@ -20,5 +20,5 @@ public class Login extends AbstractPOM {
 	public WebTextInput passwordInput;
 	
 	@FindBy(xpath = "//input[@id='edit-submit']")
-	public WebTypifiedElement submitBtn;
+	public WebButton submitBtn;
 }

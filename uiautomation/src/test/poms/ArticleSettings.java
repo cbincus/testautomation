@@ -3,15 +3,14 @@ package test.poms;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import test.core.common.AbstractPOM;
 import test.webelements.WebCheckbox;
 import test.webelements.WebLink;
 import test.webelements.WebRadio;
 import test.webelements.WebTextInput;
 import test.webelements.WebTypifiedElement;
 
-public class CreateArticle extends AbstractPOM {
-	public CreateArticle(WebDriver driver) {
+public class ArticleSettings extends SettingsPage {
+	public ArticleSettings(WebDriver driver) {
 		super(driver);
 	}
 
@@ -21,7 +20,7 @@ public class CreateArticle extends AbstractPOM {
 	@FindBy(xpath = "//body")
     private WebTypifiedElement contentInput;
 
-    public void fillInContent(String value){
+    public void fillInContent(String value) {
         driver.switchTo().frame(0);
         contentInput.sendKeys(value);
         driver.switchTo().defaultContent();

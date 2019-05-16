@@ -7,7 +7,7 @@ import test.core.common.AbstractPOM;
 import test.webelements.WebLink;
 import test.webelements.WebText;
 
-public class SettingsPage extends AbstractPOM {
+public abstract class SettingsPage extends AbstractPOM {
 	public SettingsPage(WebDriver driver) {
 		super(driver);
 	}

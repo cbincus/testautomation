@@ -23,15 +23,15 @@ public class CreateArticleComment extends BaseTest {
 		
 		driver.get("http://dev-allied-automation-drupal.pantheonsite.io/node/3");
 		Article article = new Article(driver);
-		article.commentTitleInput.sendKeys(TEST_COMMENT_TITLE);
+		article.commentForm.commentTitleInput.sendKeys(TEST_COMMENT_TITLE);
 		driver.switchTo().frame(0);
-		article.commentInput.clearAndFill(TEST_COMMENT);
+		article.commentForm.commentBodyInput.sendKeys(TEST_COMMENT);
 		driver.switchTo().defaultContent();
 
 		String commentCreateTimestamp = ZonedDateTime.now(ZoneOffset.UTC)
 				.format(DateTimeFormatter.ofPattern("EEE, MM/dd/yyyy - HH:mm").localizedBy(Locale.ENGLISH));
 
-		article.commentSendBtn.click();
+		article.commentForm.submitBtn.click();
 
 		Helpers.waitForPageLoad(driver, 10);
 

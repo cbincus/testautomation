@@ -9,6 +9,7 @@ import test.poms.Shortcuts;
 public class ArticleTest extends BaseTest {
 	@Test
 	public void test() {
+		loginWithDefaultUser();
 		driver.get("http://dev-allied-automation-drupal.pantheonsite.io/node/4");
 		Article article = new Article(driver);
 		System.out.println(article.metadataTxt.getText());
